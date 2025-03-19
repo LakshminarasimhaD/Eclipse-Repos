@@ -1,0 +1,22 @@
+package com.exceptionHandling;
+
+import java.util.Scanner;
+
+public class Program1WithTryCatch {
+	public static void main(String[] args) {
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Connection Established");
+		try {
+			System.out.println("Enter A value");
+			int a = scan.nextInt();
+			System.out.println("Enter B value");
+			int b=scan.nextInt();
+			int c = a/b;
+			System.out.println(c);
+		}catch(Exception e) {
+			System.err.println("Enter non zero denominator");
+		}
+		System.out.println("Connection Terminated");
+	}
+
+}
